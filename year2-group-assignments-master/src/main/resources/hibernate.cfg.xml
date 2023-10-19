@@ -1,0 +1,20 @@
+<hibernate-configuration xmlns="http://www.hibernate.org/xsd/orm/cfg">
+    <session-factory>
+        <property name="hibernate.hbm2ddl.auto">create</property>
+        <property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
+        <property name="hibernate.connection.pool_size">5</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.Oracle12cDialect</property>
+        <property name="use_sql_comments">true</property>
+
+        <mapping class="basics.Artist"></mapping>
+        <mapping class="basics.Person"></mapping>
+        <mapping class="basics.Group"></mapping>
+
+        <mapping class="basics.Release"></mapping>
+        <mapping class="basics.Album"></mapping>
+        <mapping class="basics.Compilation"></mapping>
+    </session-factory>
+</hibernate-configuration>
