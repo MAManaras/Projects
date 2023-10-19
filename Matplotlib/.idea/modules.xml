@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../911_Calls/.idea/911_Calls.iml" filepath="$PROJECT_DIR$/../911_Calls/.idea/911_Calls.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../MachineLearning/.idea/MachineLearning.iml" filepath="$PROJECT_DIR$/../MachineLearning/.idea/MachineLearning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Matplotlib.iml" filepath="$PROJECT_DIR$/.idea/Matplotlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Numpy/.idea/Numpy.iml" filepath="$PROJECT_DIR$/../Numpy/.idea/Numpy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Pandas/.idea/Pandas.iml" filepath="$PROJECT_DIR$/../Pandas/.idea/Pandas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Plotly_Cufflinks/.idea/Plotly_Cufflinks.iml" filepath="$PROJECT_DIR$/../Plotly_Cufflinks/.idea/Plotly_Cufflinks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Seaborn/.idea/Seaborn.iml" filepath="$PROJECT_DIR$/../Seaborn/.idea/Seaborn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../lesson01/.idea/lesson01.iml" filepath="$PROJECT_DIR$/../lesson01/.idea/lesson01.iml" />
+    </modules>
+  </component>
+</project>
