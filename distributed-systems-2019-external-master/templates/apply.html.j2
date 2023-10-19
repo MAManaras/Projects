@@ -1,0 +1,34 @@
+{% include 'header.html' %}
+<div class="third" style="max-width: 60em; margin:1em auto; padding: 2em;">
+<header><h3>Student Application System</h3></header>
+<form action="/apply" method="POST">
+	<label>Username</label>
+	<input type="text" name="id" value="{{user.username}}" readOnly required/>
+	<label>Full Name</label>
+	<input type="text" name="fullName" value="{{user.fullName}}" readOnly/>
+	<br /> <br />
+	<label>
+	<span>Number of siblings that are currently students</span>
+	<input type="number" name="student_siblings" min="0" value="0"/>
+	</label>
+	<label>
+	<span>Personal annual income</span>
+	<input type="number" name="student_income" min="0" value="0"/>
+	</label>
+	<label>
+	<span>Family annual income</span>
+	<input type="number" name="family_income" min="0" value="0"/>
+	</label>
+	<label>
+	<input class="checkable" type="checkbox" name="commuting"/>
+	<span class="checkable">I live outside of Athens</span>
+	</label> <br />
+	<label>
+	<input type="checkbox" name="both_parents_unemployed"/>
+	<span class="checkable">Both of my parents are currently unemployed</span>
+	</label>
+	<br /> <br />
+	<button class="primary" type="submit">Submit</button>
+</form>
+
+</body>

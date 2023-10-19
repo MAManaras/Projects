@@ -1,0 +1,36 @@
+{% include 'header.html' %}
+<section class="flex live main">
+<article class="full fifth-1000">
+{% if term.active and (application == None or application.term.id != term.id) %}
+<article class="card" style="color: white; background-color: red;">
+<header><h3>No application has been submitted for the current term</h3></header>
+<p>You can submit your application <a href="/apply" class="button">here</a></p>
+</article>
+{% elif not term.active %}
+<article class="card">
+<header><h3>No application term is currently active, applications cannot be submitted</h3></header>
+</article>
+{% endif %}
+
+{% if application != None %}
+<article class="card">
+	<header><h3>Application Status {% if application.term.id != term.id %}<span style="color: red;">for the previous term</span>{% endif %}</h3></header>
+	<p>Submission date: {{ application.submissionDate | ctime }}</p>
+	{% if application.state == 'REJECTED' %}
+	<p>Status: <span class="button" style="background-color: #ff0000">REJECTED</span></p>
+	{% elif application.state == 'ACCEPTED' %}
+	<p>Status: <span class="button" style="background-color: #00ff00">ACCEPTED</span></p>
+	{% elif application.state == 'NEW' %}
+	<p>Status: <span class="button" style="background-color: #0000ff">PENDING</span></p>
+	{% elif application.state == 'APPROVED' %}
+	<p>Status: <span class="button" style="background-color: #0000ff">APPROVED</span></p>
+	{% endif %}
+	<p>Ranking: {{application.ranking}}</p>
+</article>
+{% endif %}
+
+
+<br/> <br/>
+</article>
+</section>
+</body>

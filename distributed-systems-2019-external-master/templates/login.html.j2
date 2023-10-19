@@ -1,0 +1,14 @@
+{% include 'header.html' %}
+{% if error %}
+{% endif %}
+<div class="third" style="max-width: 40em; margin:1em auto;">
+<header><h3>Student Application System</h3></header>
+<span style="color: red;">Invalid username or password</span>
+<form action="/login" method="POST">
+	<input class="stack" type="text" name="username" placeholder="Username"/>
+	<input class="stack" type="password" name="password" placeholder="Password"/>
+	<button class="stack" class="primary" type="submit">Login</button>
+</form>
+{{session['username']}}
+</div>
+</body>

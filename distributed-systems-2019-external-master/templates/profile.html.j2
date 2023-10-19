@@ -1,0 +1,13 @@
+{% include 'header.html' %}
+<div class="third" style="max-width: 60em; margin:1em auto; padding: 2em;">
+<header><h3>Update contact details</h3></header>
+<form action="/profile" method="POST">
+	<label>
+	<span>Phone number</span>
+	<input type="text" name="phone" value="{{user.phone}}" />
+	</label>
+	<br />
+	<button class="primary" type="submit">Save</button>
+</form>
+
+</body>
