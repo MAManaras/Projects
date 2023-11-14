@@ -1,0 +1,1 @@
+This project works on one more csv file called 'lending_club_loan_two.csv' which may can be found online. Unfortunately the file is very big and it can't be uploaded
